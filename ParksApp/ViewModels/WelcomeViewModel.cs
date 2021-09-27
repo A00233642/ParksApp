@@ -9,7 +9,7 @@ namespace ParksApp.ViewModels
     {
         public WelcomeViewModel()
         {
-            Title = "About";
+            Title = "Welcome to the application";
             OpenWebCommand = new Command(async () => await Browser.OpenAsync("https://www,google.com"));
         }
 
