@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.810.9
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ParksApp.Android", "ParksApp.Android\ParksApp.Android.csproj", "{0EC76541-DACE-4699-A495-794AEEEECC18}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ParksApp", "ParksApp\ParksApp.csproj", "{AAC9A074-BD10-49C2-84DB-6892713221E8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0EC76541-DACE-4699-A495-794AEEEECC18}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0EC76541-DACE-4699-A495-794AEEEECC18}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0EC76541-DACE-4699-A495-794AEEEECC18}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0EC76541-DACE-4699-A495-794AEEEECC18}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AAC9A074-BD10-49C2-84DB-6892713221E8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AAC9A074-BD10-49C2-84DB-6892713221E8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AAC9A074-BD10-49C2-84DB-6892713221E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AAC9A074-BD10-49C2-84DB-6892713221E8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {348C2207-3221-4A11-9D4F-FDABBD6651F9}
+	EndGlobalSection
+EndGlobal
