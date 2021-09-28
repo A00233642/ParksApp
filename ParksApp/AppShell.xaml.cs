@@ -1,4 +1,6 @@
 ﻿using System;
+using Xamarin.Forms;
+using ParksApp.Views;
 
 namespace ParksApp
 {
@@ -7,6 +9,7 @@ namespace ParksApp
         public AppShell()
         {
             InitializeComponent();
+            Routing.RegisterRoute(nameof(TestPage), typeof(TestPage));
       
         }
 
