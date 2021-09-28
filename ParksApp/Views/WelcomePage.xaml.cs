@@ -11,7 +11,7 @@ namespace ParksApp.Views
             BindingContext = new WelcomeViewModel();
 
 
-
+           
             var learnMoreButton = new Button() { Text = "LEARN MORE", };
             learnMoreButton.SetBinding(Button.CommandProperty, new Binding("OpenWebCommand"));
 
@@ -20,13 +20,21 @@ namespace ParksApp.Views
 
             //var testPageButton = new Button() { Text = "Go to TestPage" };
 
+            var NameLabel = new Label { Text = "Akintunde Taiwo" };
+
+            var StudentLabel = new Label { Text = "A00233642" };
+
+
             Content = new StackLayout() { Padding = 30, Children =
                 {
                     learnMoreButton
-                    , testPageButton
+                    , testPageButton,
+                    NameLabel,
+                    StudentLabel
 
                 }};
 
+          
         }
     }
 }
