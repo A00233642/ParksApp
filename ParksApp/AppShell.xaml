@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Shell xmlns="http://xamarin.com/schemas/2014/forms" 
        xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+       xmlns:local="clr-namespace:ParksApp.Views"
     
        Title="ParksApp"
        x:Class="ParksApp.AppShell">
@@ -78,7 +79,23 @@
         FlyoutDisplayOptions="AsMultipleItems" will create a separate flyout item for each child element    
         https://docs.microsoft.com/dotnet/api/xamarin.forms.shellgroupitem.flyoutdisplayoptions?view=xamarin-forms
     -->
-   
+
+
+
+    <FlyoutItem Title="Welcome">
+
+                <ShellContent Route="WelcomePage" ContentTemplate="{DataTemplate local:WelcomePage}"></ShellContent>
+
+
+    </FlyoutItem>
+
+
+    <FlyoutItem Title="Parks">
+
+        <ShellContent Route="ParksPage" ContentTemplate="{DataTemplate local:ParksPage}"></ShellContent>
+
+
+    </FlyoutItem>
     
     <!-- When the Flyout is visible this will be a menu item you can tie a click behavior to  -->
    

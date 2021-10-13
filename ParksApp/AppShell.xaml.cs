@@ -1,5 +1,6 @@
 ﻿using System;
 using Xamarin.Forms;
+using ParksApp.Views;
 
 
 namespace ParksApp
@@ -9,8 +10,10 @@ namespace ParksApp
         public AppShell()
         {
             InitializeComponent();
-          //  Routing.RegisterRoute(nameof(TestPage), typeof(TestPage));
-      
+            // Routing.RegisterRoute(nameof(WelcomePage), typeof(WelcomePage));
+            Routing.RegisterRoute(nameof(WelcomePage), typeof(WelcomePage));
+            Routing.RegisterRoute(nameof(ParksPage), typeof(ParksPage));
+
         }
 
         private async void OnMenuItemClicked(object sender, EventArgs e)
