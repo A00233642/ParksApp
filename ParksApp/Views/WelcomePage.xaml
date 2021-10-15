@@ -3,13 +3,63 @@
     xmlns="http://xamarin.com/schemas/2014/forms"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:local="clr-namespace:IntelliSenseForDataBinding"
+    
     x:Class="ParksApp.Views.WelcomePage">
      <ContentPage.Content>
+         <ScrollView>
         <StackLayout>
-            <Label Text="Welcome!" BackgroundColor="Green"
-                VerticalOptions="CenterAndExpand"
-                HorizontalOptions="CenterAndExpand"/>
+            <Label Text="Welcome to my ParkApp!" BackgroundColor="Green" FontSize="Title"></Label>
+            <Label Text="AKINTUDE TAIWO" TextColor="Black" FontAttributes="Bold" FontSize="Title" ></Label>
+            <Label Text="A00233664" TextColor="Red" FontAttributes="Italic" FontSize="Title"></Label>
+
+             <Label Text="Description of the ParksApp" FontAttributes="Bold" FontSize="Title" TextColor="Brown"></Label>
+
+            <Label Text="This application is designed using Xamarin.forms and visaul studio" FontSize="20"></Label>
+
+             <Label Text="Purpose of the ParksApp" FontAttributes="Bold" FontSize="Title" TextColor="Black"></Label>
+            <Label Text="The main purpose of the application is to have several list of parks in a location, the applicarion will enable people to view the list of avialbel parks, also to be able to get a description of the available parks" FontSize="20"></Label>
+
+            <Label Text="Features of the ParksApp" FontAttributes="Bold" FontSize="Title" TextColor="Black"></Label>
+
+            <Label Text="&#x2022; It has GPS fuctionality" FontSize="23"></Label>
+
+             <Label Text="&#x2022; You can view images of the park" FontSize="23"></Label>
+
+             <Label Text="&#x2022; There is description for each park" FontSize="23"></Label>
+
+             <Label Text="&#x2022; You can view opening and closing hours " FontSize="23"></Label>
+
+             <Label Text="What makes it fun for family" FontAttributes="Bold" FontSize="Title" TextColor="Black"></Label>
+             <Label Text="&#x2022; The application will be user friendly" FontSize="23"></Label>
+             <Label Text="&#x2022; It will be error free" FontSize="23"></Label>
+             <Label Text="&#x2022; There is GPS which will make allow user to be able to find easily locate parks " FontSize="23"></Label>
+             <Label Text="&#x2022; Users can view details of parks of their choice" FontSize="23"></Label>
+
+
+             <Label Text="Pages and their purpose" FontAttributes="Bold" FontSize="Title" TextColor="Black"></Label>
+
+            <Label Text="&#x2022; Welcome Page: It display the home scren of the application it includes Title, Student name, app description, app features " FontSize="23"></Label>
+
+            <Label Text="&#x2022; Parks Page: It displays the list of parks " FontSize="23"></Label>
+
+            <Label Text="&#x2022; Park Detail Page: It shows details oneach parks " FontSize="23"></Label>
+
+            <Label Text="Technical Challenges" FontAttributes="Bold" FontSize="Title" TextColor="Black"></Label>
+            <Label Text="&#x2022; Time Limitation " FontSize="23"></Label>
+              <Label Text="&#x2022; Device Compability " FontSize="23"></Label>
+              <Label Text="&#x2022; Not enough funds " FontSize="23"></Label>
+              <Label Text="&#x2022; using outdated technologies " FontSize="23"></Label>
+
+
+
+
+
+
+
+           
+                
        </StackLayout>
+        </ScrollView>     
     </ContentPage.Content>
 </ContentPage>
 

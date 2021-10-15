@@ -47,9 +47,12 @@
                    <DataTemplate x:DataType="models:Park">
                        <ViewCell>
                            <StackLayout>
-                               <Label Text="{Binding Name}" TextColor="Black" FontAttributes="Italic"></Label>
-                               <Label Text="{Binding Description}" TextColor="Red" FontAttributes="Bold"></Label>
+                               <Label Text="{Binding Name}" TextColor="Green" FontAttributes="Italic" FontSize="Title" Padding="1" BackgroundColor="Brown" ></Label>
+                               <Label Text="{Binding Description}" TextColor="Black" FontAttributes="Bold" FontSize="Subtitle" Padding="1"  
+                                      ></Label>
+
                                
+
                            </StackLayout>
 
                        </ViewCell>

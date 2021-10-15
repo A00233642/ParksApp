@@ -8,8 +8,8 @@
     Title="{Binding Name}">
 <ContentPage.Content>
         <StackLayout>
-            <Label Text="{Binding Name}" TextColor="Black"/>
-            <Label Text="{Binding Description}" TextColor="Black"/>
+            <Label Text="{Binding Name}" TextColor="Black" FontAttributes="Bold" FontSize="Title" BackgroundColor="Brown"/>
+            <Label Text="{Binding Description}" TextColor="Red" FontAttributes="Italic" FontSize="Subtitle"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

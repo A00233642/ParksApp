@@ -8,6 +8,13 @@ namespace ParksApp.Views
         public WelcomePage()
         {
             InitializeComponent();
+
         }
+
+        ListView HeaderList = new ListView()
+        {
+
+            Header = "Header",
+        };
     }
 }
