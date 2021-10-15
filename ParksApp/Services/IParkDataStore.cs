@@ -10,6 +10,8 @@ namespace ParksApp.Services
         
      Task<IEnumerable<Park>> GetParks();
 
+        Task<Park> GetPark(int parkId);
+
 
     }
 }

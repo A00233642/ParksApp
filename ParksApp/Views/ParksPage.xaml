@@ -4,8 +4,9 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:viewmodels="clr-namespace:ParksApp.ViewModels"
     xmlns:models="clr-namespace:ParksApp.Models"
+    xmlns:xct="http://xamarin.com/schemas/2020/toolkit"
     x:Class="ParksApp.Views.ParksPage">
-   
+    
 
 
 
@@ -13,6 +14,16 @@
 
     <viewmodels:ParksViewModel/>
     </ContentPage.BindingContext>
+
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+
+            <xct:ItemSelectedEventArgsConverter x:Key="ItemSelectedEventArgsConverter"></xct:ItemSelectedEventArgsConverter>
+
+        </ResourceDictionary>
+
+    </ContentPage.Resources>
     <ContentPage.Content>
 
          <StackLayout>
@@ -20,16 +31,25 @@
                Background="Transparent"
                CachingStrategy="RecycleElement"
                ItemsSource="{Binding Parks}"
-               RowHeight="60">
-              
+               RowHeight="60"
+               SelectedItem="{Binding SelectedPark, Mode=TwoWay}">
+               <ListView.Behaviors>
+                   <xct:EventToCommandBehavior
+                       EventName="ItemSelected"
+                       Command="{Binding SelectedCommand}"
+                       EventArgsConverter="{StaticResource ItemSelectedEventArgsConverter}"></xct:EventToCommandBehavior>
+
+
+               </ListView.Behaviors>
+
                <ListView.ItemTemplate>
 
                    <DataTemplate x:DataType="models:Park">
                        <ViewCell>
                            <StackLayout>
-                               <Label Text="{Binding Name}" TextColor="Black"></Label>
-
-
+                               <Label Text="{Binding Name}" TextColor="Black" FontAttributes="Italic"></Label>
+                               <Label Text="{Binding Description}" TextColor="Red" FontAttributes="Bold"></Label>
+                               
                            </StackLayout>
 
                        </ViewCell>
